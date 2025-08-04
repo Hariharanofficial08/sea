@@ -4,24 +4,80 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Searestaurant.com/contact</title>
+    <title>Searestaurant.com</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .follow-us-container {
+            background-color: rgb(243, 238, 238);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .follow-us-container ul {
+            display: inline-flex;
+            list-style-type: none;
+            padding: 0;
+            justify-content: center;
+        }
+
+        .follow-us-container ul li {
+            margin: 0 15px;
+            text-align: center;
+        }
+
+        .social-icon {
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.2); /* Magnify effect */
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+    </style>
 </head>
 
 <body>
     <div class="sticky-top">
         <nav class="navbar navbar-expand-lg bg-body-tertiary " style="z-index: 1; padding-bottom :1px">
-
             <div class="container-fluid">
                 <nav class="navbar bg-body-transparent">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#">
-                            <img src="./assets/Images/detailed-chef-logo-template.png" alt="Logo" width="40" height="44"
+                            <img src="./assets/Images/detailed-chef-logo-template.png" alt="Logo" width="50" height="44" style=" margin-top :-12px" ;
                                 class="d-inline-block align-text-top">
-                            <a
-                                style="align-items: center;font-size: 30px;font-family:Georgia, 'Times New Roman', Times, serif;">Searestaurant</a>
+                            <span style="align-items: center;font-size: 30px;font-family:Georgia, 'Times New Roman', Times, serif;">Searestaurant</span>
                         </a>
                     </div>
                 </nav>
@@ -30,124 +86,135 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left: 49%;">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left: 46%;">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html"
-                                style="padding-right :30px"><button type="button" class="btn btn-transparent ho "
-                                    style="padding: 0px;font-family:Georgia, 'Times New Roman', Times, serif;font-size: 20px;">Home</button></a>
+                            <a class="nav-link active" aria-current="page" href="index.html" style="padding-right :20px">
+                                <button type="button" class="btn btn-transparent ho"
+                                    style="padding: 0px;font-family:Georgia, 'Times New Roman', Times, serif;font-size: 20px;">Home</button>
+                            </a>
                         </li>
-                        <li class="nav-item" style="padding-right :30px">
-                            <a class="nav-link active" aria-current="page" href="Menu.html"><button type="button"
-                                    class="btn btn-transparent ho"
-                                    style="padding: 0px;font-family:Georgia, 'Times New Roman', Times, serif;font-size: 20px;">Menu</button></a>
+                        <li class="nav-item" style="padding-right :20px">
+                            <a class="nav-link active" aria-current="page" href="Menu.html">
+                                <button type="button" class="btn btn-transparent ho"
+                                    style="padding: 0px;font-family:Georgia, 'Times New Roman', Times, serif;font-size: 20px;">Menu</button>
+                            </a>
                         </li>
-                        <li class="nav-item" style="padding-right :30px">
-                            <a class="nav-link active" aria-current="page" href="contact.html"><button type="button"
-                                    class="btn btn-transparent ho"
-                                    style="padding: 0px;font-family:Georgia, 'Times New Roman', Times, serif;font-size: 20px;">Contact</button></a>
+                        <li class="nav-item" style="padding-right :20px">
+                            <a class="nav-link active" aria-current="page" href="contact.html">
+                                <button type="button" class="btn btn-transparent ho"
+                                    style="padding: 0px;font-family:Georgia, 'Times New Roman', Times, serif;font-size: 20px;">Contact</button>
+                            </a>
                         </li>
-                        <li class="nav-item" style="padding-right :30px">
-                            <a class="nav-link active" aria-current="page" href="about.html"><button type="button"
-                                    class="btn btn-transparent ho"
-                                    style="padding: 0px;font-family:Georgia, 'Times New Roman', Times, serif;font-size: 20px;">About</button></a>
+                        <li class="nav-item" style="padding-right :20px">
+                            <a class="nav-link active" aria-current="page" href="about.html">
+                                <button type="button" class="btn btn-transparent ho"
+                                    style="padding: 0px;font-family:Georgia, 'Times New Roman', Times, serif;font-size: 20px;">About</button>
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
-    <center>
-        <form action="https://api.web3forms.com/submit" method="POST">
+
+    <main class="container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="mt-5">
             <input type="hidden" name="access_key" value="747cb6ba-943b-4c8d-ae2b-ea8f249e2dd1">
-            <div class="container backposture" style="margin-top: 50px;width: 50%;background-color:ghostwhite;">
-
-                <h1 style="font-size: 40px;font-family:Georgia, 'Times New Roman', Times, serif;">Contact Us</h1>
+            <div class="contact-form-container backposture content mx-auto p-4" style="max-width: 600px; background-color: ghostwhite;">
+                <h1 style="font-size: 40px; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;">Contact Us</h1>
                 <br>
-
-
-                <div class="mb-4 col-md-8">
-                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="Enter Your Email address">
+                <div class="mb-4">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email"
+                        placeholder="Enter Your Email address" required>
                 </div>
-                <div class="mb-4 col-md-8">
-                    <label for="exampleFormControlInput1" class="form-label">Mobile Number</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="Enter Your Mobile Number">
+                <div class="mb-4">
+                    <label for="mobile" class="form-label">Mobile Number</label>
+                    <input type="tel" maxlength="10" class="form-control" id="mobile" name="mobile"
+                        placeholder="Enter Your Mobile Number" required>
                 </div>
-                <div class="mb-3 col-md-8">
-                    <label for="exampleFormControlTextarea1" class="form-label">Description</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                        placeholder="Type Here"></textarea>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea class="form-control" id="description" name="description" rows="3"
+                        placeholder="Type Here" required></textarea>
                 </div>
-                <button type="button" class="btn btn-primary" id="sb">Submit</button>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary" id="sb">Submit</button>
+                </div>
+            </div>
         </form>
+    </main>
+
+    <hr class="mt-5">
+    
+   <center>
+   <div class="follow-us-container mt-4 backposture">
+    <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">Follow Us</h1>
+    <h6 style="font-size: 10px; margin-bottom: 30px;">
+        Follow us for the latest updates, specials, and seafood delights!
+    </h6>
+    <ul>
+        <li>
+            <a href="https://www.instagram.com/whotf_harx/" target="_blank" class="social-icon">
+                <img src="./assets/Images/instagram.png" alt="instagram" width="20" height="20">
+                
+            </a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/share/16ihtbbVEh/" target="_blank" class="social-icon">
+                <img src="./assets/Images/social-media.png" alt="facebook" width="20" height="20">
+                
+            </a>
+        </li>
+        <li>
+            <a href="https://x.com/MR_NOBITA_FF" target="_blank" class="social-icon">
+                <img src="./assets/Images/social-media-2.png" alt="twitter" width="20" height="20">
+               
+            </a>
+        </li>
+        <li>
+            <a href="https://wa.me/qr/GMZRJAZ4SCXCB1" target="_blank" class="social-icon">
+                <img src="./assets/Images/message_13703549.png" alt="whatsapp" width="20" height="20">
+                
+            </a>
+        </li>
+    </ul>
     </center>
-    <hr>
-    <br>
-    <div class="backposture" style="background-color: rgb(243, 238, 238);;z-index: 1;">
-        <div style="font-family: Georgia, 'Times New Roman', Times, serif;top: 10%;z-index: 0;">
-            <Center>
-                <h1>
-                    Follow Us
-                </h1>
-                <h6 style="font-size: 10px;margin-bottom: 30px;">
-                    Follow us for the latest updates, specials, and seafood delights!
-                </h6>
-                <div style="display: flex;">
-                    <ul style="display: inline-flex;margin-left: 370px;" class="cursorpoint">
-                        <li style="margin:10px">
-                            <a href="https://www.instagram.com" target="_blank">
-                                <img src="./assets/Images/instagram.png" alt="instagram" width="20" height="20">
-                            </a>
-                            <p>instagram</p>
-                        </li>
-                        <li style="margin:10px">
-                            <a href="https://www.facebook.com/" target="_blank">
-                                <img src="./assets/Images/social-media.png" alt="facebook" width="20" height="20">
-                            </a>
-                            <p>facebook</p>
-                        </li>
-                        <li style="margin:10px">
-                            <a href="https://twitter.com/" target="_blank">
-                                <img src="./assets/Images/social-media-2.png" alt="twitter" width="20" height="20">
-
-                            </a>
-                            <p>twitter</p>
-                        </li>
-                        <li style="margin:10px">
-                            <a href="" target="_blank">
-                                <img src="./assets/Images/message_13703549.png" alt="whatsapp" width="20"
-                                    height="20"></a>
-                            <p>Whatsapp</p>
-                        </li>
-                    </ul>
-                </div>
-
-            </Center>
+    </div>
+    
+    <footer class="footer">
+        <div class="container">
+            <h6 class="mb-2">Thanks & Regards</h6>
+            <h6>Copyright © 2023 Searestaurant.com. All rights reserved.</h6>
         </div>
-    </div>
-
-    <div style="background-color: black;width: 100%;color: white;padding-bottom:100px;position:static;">
-        <center>
-            <br>
-            <br>
-            <h6>
-                Thanks & Regards
-            </h6>
-            <br>
-            <h6>
-                Copyright © 2023 Searestaurant.com. All rights reserved.
-            </h6>
-        </center>
-    </div>
-
-
-
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
-        </script>
-    <script src="script.js"></script>
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const contents = document.querySelectorAll('.content');
+
+            const checkVisibility = () => {
+                const triggerBottom = window.innerHeight / 5 * 4;
+                contents.forEach(content => {
+                    const contentTop = content.getBoundingClientRect().top;
+                    if (contentTop < triggerBottom) {
+                        content.classList.add('show');
+                    } else {
+                        content.classList.remove('show');
+                    }
+                });
+            };
+
+            window.addEventListener('scroll', checkVisibility);
+
+            // Initial check on load
+            checkVisibility();
+        });
+    </script>
 </body>
+
+</html>
